@@ -1,0 +1,24 @@
+{
+  "tests": [
+    {
+      "name": "ARI test",
+      "setup": "sudo dpkg -i ./libcs50_10.1.1_amd64.deb",
+      "run": "make test",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "No modification of main.c",
+      "setup": "",
+      "run": "md5sum -c .checksums",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    }
+  ]
+}
